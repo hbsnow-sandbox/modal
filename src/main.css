@@ -1,0 +1,35 @@
+/* Modal 1 */
+body:has(:modal) {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
+
+body:has(:modal)::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 200vh;
+  background: rgba(0, 0, 128, 0.4);
+  z-index: -1;
+  overflow-y: scroll;
+}
+
+:modal {
+  background: #ddd;
+}
+
+:modal::backdrop {
+  background: rgba(128, 0, 0, 0.5);
+}
+
+/* Modal 2 */
+body.open {
+  touch-action: none;
+  -webkit-overflow-scrolling: none;
+  overflow: hidden;
+  overscroll-behavior: none;
+}
