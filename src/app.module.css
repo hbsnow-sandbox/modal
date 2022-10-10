@@ -7,11 +7,9 @@
 /* Modal 2 */
 .divDialog {
   position: fixed;
-  max-height: 80vh;
-  top: 10vh;
-  left: 50%;
+  top: 50dvh;
+  top: 50%;
   background: #ddd;
-  transform: translate(-50%, -50%);
   padding: 1rem;
   z-index: 9999;
 }
