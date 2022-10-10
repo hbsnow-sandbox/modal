@@ -6,8 +6,6 @@ export const App = (): JSX.Element => {
   const ref1 = useRef<HTMLDialogElement>(null);
   const ref2 = useRef<HTMLDialogElement>(null);
 
-  // const [hidden, setHidden] = useState(true);
-
   return (
     <div>
       <div className={styles.action}>
