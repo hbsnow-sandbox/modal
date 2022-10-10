@@ -32,18 +32,16 @@ export const App = (): JSX.Element => {
       </dialog>
 
       <dialog className={styles.divDialog} ref={ref2}>
-        <div>
-          <p>Hello, world!</p>
+        <p>Hello, world!</p>
 
-          <button
-            onClick={() => {
-              document.body.classList.remove("open");
-              ref2.current?.close();
-            }}
-          >
-            Close Modal
-          </button>
-        </div>
+        <button
+          onClick={() => {
+            document.body.classList.remove("open");
+            ref2.current?.close();
+          }}
+        >
+          Close Modal
+        </button>
       </dialog>
     </div>
   );
