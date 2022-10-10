@@ -15,7 +15,6 @@ export const App = (): JSX.Element => {
 
         <button
           onClick={() => {
-            console.log("122");
             document.body.classList.add("open");
             ref2.current?.show();
           }}
